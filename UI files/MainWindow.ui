@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1395</width>
+    <height>841</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial Narrow</family>
+    <pointsize>10</pointsize>
+    <weight>75</weight>
+    <italic>false</italic>
+    <bold>true</bold>
+    <kerning>false</kerning>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:black
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1401</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1395</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGestion_De_Parc_Automobile">
+    <property name="title">
+     <string>Gestion De Parc Automobile</string>
+    </property>
+    <widget class="QMenu" name="menuMise_Jour_du_Parc">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <addaction name="actionAjouter_Voiture"/>
+     <addaction name="actionsupprimer_Voiture"/>
+     <addaction name="actionmodifier_Voiture"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Recherche et Affichage</string>
+     </property>
+     <addaction name="actionAffichage_2"/>
+     <addaction name="actionRecherche"/>
+    </widget>
+    <addaction name="menuMise_Jour_du_Parc"/>
+    <addaction name="menuRecherche_et_Affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_Des_Clients">
+    <property name="title">
+     <string>Gestion Des Clients</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_De_la_Liste_Des_Clients">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Mise à jour </string>
+     </property>
+     <addaction name="actionAjout_un_Nouvel_Client"/>
+     <addaction name="actionSupprimer_Un_Client"/>
+     <addaction name="actionModifier_un_Client"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_Affichage_et_Trie">
+     <property name="title">
+      <string>Recherche et Affichage </string>
+     </property>
+     <addaction name="actionAffichage"/>
+     <addaction name="actionRecherche_par_CIN"/>
+    </widget>
+    <addaction name="menuMise_jour_De_la_Liste_Des_Clients"/>
+    <addaction name="menuRecherche_Affichage_et_Trie"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_Des_Locations">
+    <property name="title">
+     <string>Gestion Des Locations</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <addaction name="actionAjouter_une_nouvelle_Location"/>
+     <addaction name="actionSupprimer_une_Location"/>
+     <addaction name="actionModifier_une_Location"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage_2">
+     <property name="title">
+      <string>Recherche et Affichage</string>
+     </property>
+     <addaction name="actionAffichage_3"/>
+     <addaction name="actionRecherche_2"/>
+    </widget>
+    <addaction name="menuMise_jour"/>
+    <addaction name="menuRecherche_et_Affichage_2"/>
+   </widget>
+   <widget class="QMenu" name="menuLes_Fichiers">
+    <property name="title">
+     <string>Enregistrement et Récupération</string>
+    </property>
+    <widget class="QMenu" name="menuParc_Automobile">
+     <property name="title">
+      <string>Parc Automobile</string>
+     </property>
+     <addaction name="actionEnregistrement_Fichier_Voitures"/>
+     <addaction name="actionR_cup_ration_Fichier_Voitures"/>
+    </widget>
+    <widget class="QMenu" name="menuLes_Clients">
+     <property name="title">
+      <string>Clients</string>
+     </property>
+     <addaction name="actionEnregistrement_Fichier_Client"/>
+     <addaction name="actionR_cup_ration_Fichier_Client"/>
+    </widget>
+    <widget class="QMenu" name="menuLes_Locations">
+     <property name="title">
+      <string>Locations</string>
+     </property>
+     <addaction name="actionEnregistrement_Fichier_Location"/>
+     <addaction name="actionR_cup_ration_Fichier_Location"/>
+    </widget>
+    <addaction name="menuParc_Automobile"/>
+    <addaction name="menuLes_Clients"/>
+    <addaction name="menuLes_Locations"/>
+    <addaction name="actionR_cup_rer_Tous"/>
+    <addaction name="actionEnregistrer_Tous"/>
+   </widget>
+   <widget class="QMenu" name="menuAcceuil">
+    <property name="title">
+     <string>Acceuil</string>
+    </property>
+    <addaction name="actionPage_Principale"/>
+   </widget>
+   <addaction name="menuGestion_De_Parc_Automobile"/>
+   <addaction name="menuGestion_Des_Clients"/>
+   <addaction name="menuGestion_Des_Locations"/>
+   <addaction name="menuLes_Fichiers"/>
+   <addaction name="menuAcceuil"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAjout_un_Nouvel_Client">
+   <property name="text">
+    <string>Ajouter Client</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_Un_Client">
+   <property name="text">
+    <string>Supprimer Client</string>
+   </property>
+  </action>
+  <action name="actionModifier_l_Adresse">
+   <property name="text">
+    <string>Modifier l'Adresse</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionModifier_N_T_l_phone">
+   <property name="text">
+    <string>Modifier N° Téléphone</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionModifier_le_Mail">
+   <property name="text">
+    <string>Modifier le Mail</string>
+   </property>
+  </action>
+  <action name="actionAffichage">
+   <property name="text">
+    <string>Affichage</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_CIN">
+   <property name="text">
+    <string>Recherche</string>
+   </property>
+  </action>
+  <action name="actionAjouter_Voiture">
+   <property name="text">
+    <string>Ajouter Voiture</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Myanmar Text</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionSupression_par_Matricule">
+   <property name="text">
+    <string>Supression par Matricule</string>
+   </property>
+  </action>
+  <action name="actionSupression_par_Marque">
+   <property name="text">
+    <string>Supression  par Marque</string>
+   </property>
+  </action>
+  <action name="actionSupression_Voitures_Ag_es">
+   <property name="text">
+    <string>Supression Voitures Agées</string>
+   </property>
+  </action>
+  <action name="actionModification_Du_Prix">
+   <property name="text">
+    <string>Modification Du Prix</string>
+   </property>
+  </action>
+  <action name="actionModification_Couleur">
+   <property name="text">
+    <string>Modification Du Couleur</string>
+   </property>
+  </action>
+  <action name="actionAffichage_2">
+   <property name="text">
+    <string>Affichage</string>
+   </property>
+  </action>
+  <action name="actionPar_Matricule">
+   <property name="text">
+    <string>Par Matricule</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionPar_Marque">
+   <property name="text">
+    <string>Par Marque</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionPar_Couleur">
+   <property name="text">
+    <string>Par Couleur</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionDes_Voitures_Disponibles">
+   <property name="text">
+    <string>Des Voitures Disponibles</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionDes_Voitures_Lou_es">
+   <property name="text">
+    <string>Des Voitures Louées</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionDes_Voitures_Lou_es_entre_2_Dates">
+   <property name="text">
+    <string>Des Voitures Louées entre 2 Dates</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionAjouter_une_nouvelle_Location">
+   <property name="text">
+    <string>Ajouter Contrat</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_une_Location">
+   <property name="text">
+    <string>Supprimer Contrat</string>
+   </property>
+  </action>
+  <action name="actionModifier_la_Date_de_Location">
+   <property name="text">
+    <string>Modifier la Date de Location</string>
+   </property>
+  </action>
+  <action name="actionModifier_la_Dur_e">
+   <property name="text">
+    <string>Modifier la Durée</string>
+   </property>
+  </action>
+  <action name="actionAffichage_3">
+   <property name="text">
+    <string>Affichage</string>
+   </property>
+  </action>
+  <action name="actionpar_CIN">
+   <property name="text">
+    <string>par CIN</string>
+   </property>
+  </action>
+  <action name="actionpar_Matricule">
+   <property name="text">
+    <string>par Matricule</string>
+   </property>
+  </action>
+  <action name="actionpar_Date_Donn_e">
+   <property name="text">
+    <string>par Date Donnée</string>
+   </property>
+  </action>
+  <action name="actionpar_Dur_e_de_Location">
+   <property name="text">
+    <string>par Durée de Location</string>
+   </property>
+  </action>
+  <action name="actionpar_Location_entre_2_Dates">
+   <property name="text">
+    <string>par Location entre 2 Dates</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_Fichier_Voitures">
+   <property name="text">
+    <string>Enregistrement Fichier Voitures</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_Fichier_Voitures">
+   <property name="text">
+    <string>Récupération Fichier Voitures</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_Fichier_Client">
+   <property name="text">
+    <string>Enregistrement Fichier Client</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_Fichier_Client">
+   <property name="text">
+    <string>Récupération Fichier Client</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_Fichier_Location">
+   <property name="text">
+    <string>Enregistrement Fichier Location</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_Fichier_Location">
+   <property name="text">
+    <string>Récupération Fichier Location</string>
+   </property>
+  </action>
+  <action name="actionsupprimer_Voiture">
+   <property name="text">
+    <string>Supprimer Voiture</string>
+   </property>
+  </action>
+  <action name="actionmodifier_Voiture">
+   <property name="text">
+    <string>Modifier Voiture</string>
+   </property>
+  </action>
+  <action name="actionRecherche">
+   <property name="text">
+    <string>Recherche</string>
+   </property>
+  </action>
+  <action name="actionModifier_un_Client">
+   <property name="text">
+    <string>Modifier Client</string>
+   </property>
+  </action>
+  <action name="actionModifier_une_Location">
+   <property name="text">
+    <string>Modifier Contrat</string>
+   </property>
+  </action>
+  <action name="actionRecherche_2">
+   <property name="text">
+    <string>Recherche</string>
+   </property>
+  </action>
+  <action name="actionPage_Principale">
+   <property name="text">
+    <string>Page Principale</string>
+   </property>
+  </action>
+  <action name="actionR_cup_rer_Tous">
+   <property name="text">
+    <string>Récupérer Tous</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_Tous">
+   <property name="text">
+    <string>Enregistrer Tous</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="mothak.qrc"/>
+ </resources>
+ <connections/>
+</ui>

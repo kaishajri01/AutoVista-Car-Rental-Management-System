@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1394</width>
+    <height>836</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <underline>true</underline>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:DarkSlateGrey</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-130</x>
+     <y>-100</y>
+     <width>1621</width>
+     <height>1051</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="mothak2qrc.qrc">:/pics/b1.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>40</y>
+     <width>371</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Bernard MT Condensed</family>
+     <pointsize>36</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:none;color:white</string>
+   </property>
+   <property name="text">
+    <string>Enregistrement</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="partie1matr">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>180</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border-style: outset;
+background-color:white;
+    border-radius: 10px;
+}
+QLineEdit:focus{
+border:1.5px solid
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>000</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>180</y>
+     <width>55</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Berlin Sans FB Demi</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:none;
+color:white</string>
+   </property>
+   <property name="text">
+    <string>TUN</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="partie2matr">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>180</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border-style: outset;
+background-color:white;
+    border-radius: 10px;
+}
+QLineEdit:focus{
+border:1.5px solid
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>0000</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="marque">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>260</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border-style: outset;
+background-color:white;
+    border-radius: 10px;
+}
+QLineEdit:focus{
+border:1.5px solid
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Marque</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="couleur">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>340</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border-style: outset;
+background-color:white;
+    border-radius: 10px;
+}
+QLineEdit:focus{
+border:1.5px solid
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Couleur</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dateachat">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>430</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border-style: outset;
+background-color:white;
+    border-radius: 10px;
+}
+QLineEdit:focus{
+border:1.5px solid
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Date d'achat</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="prixlocation">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>530</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border-style: outset;
+background-color:white;
+    border-radius: 10px;
+}
+QLineEdit:focus{
+border:1.5px solid
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Prix de location ($)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>650</y>
+     <width>281</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-style: outset;
+background-color:DarkCyan;
+    border-radius: 10px;
+}
+QPushButton:hover{
+background-color:MediumSeaGreen
+}</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="mothak2qrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
